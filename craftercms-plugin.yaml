@@ -1,0 +1,44 @@
+# This file describes a plugin for use in Crafter CMS
+
+# The version of the format for this file
+descriptorVersion: 2
+
+# Describe the plugin
+plugin:
+  type: site
+  id: org.craftercms.plugin.carousel
+  name: Carousel of Images
+  tags:
+    - carousel
+    - images
+  version:
+    major: 1
+    minor: 0
+    patch: 0
+  description: A Carousel of Images with text overlay
+  website:
+    name: Carousel
+    url: TBD
+  media:
+    screenshots:
+      - title: Carousel
+        description: Carousel of Images with text overlay
+        url: TBD
+  developer:
+    company:
+      name: Crafter Software
+      email: info@craftersoftware.com
+      url: https://craftersoftware.com
+  build:
+    id: c3d2a5444e6a24b5e0481d6ba87901d0b02716c8
+    date: 2021-06-18T00:00:00Z
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  crafterCmsVersions:
+    - major: 4
+      minor: 0
+      patch: 0
+  crafterCmsEditions:
+    - community
+    - enterprise

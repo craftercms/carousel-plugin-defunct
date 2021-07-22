@@ -598,7 +598,7 @@
 					<iceId></iceId>
 					<title>Fixed Height</title>
 					<description>Controls height  attribute of the slides. If empty, no value will be set for the property.</description>
-					<defaultValue></defaultValue>
+					<defaultValue>300</defaultValue>
 					<help></help>
 					<properties>
 						<property>

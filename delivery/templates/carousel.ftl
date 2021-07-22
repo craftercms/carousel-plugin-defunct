@@ -20,7 +20,7 @@
     </#if>
     <div
       class="img"
-      style="background: url('${item.image_s}') no-repeat center; background-size: cover; <#if contentModel.fixedHeight_i??>height: ${contentModel.fixedHeight_i}px</#if>">
+      style="background: url('${item.image_s}') no-repeat center; background-size: cover; height:<#if contentModel.fixedHeight_i??>${contentModel.fixedHeight_i}px<#else>300px</#if>">
     </div>
     <p class="item-text">${item.text_s}</p>
     <#if item.link_s?has_content>

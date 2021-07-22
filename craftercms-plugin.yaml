@@ -23,7 +23,7 @@ plugin:
     screenshots:
       - title: Carousel
         description: Carousel of Images with text overlay
-        url: TBD
+        url: https://raw.githubusercontent.com/craftercms/carousel-plugin/master/.crafter/cover.png
   developer:
     company:
       name: Crafter Software

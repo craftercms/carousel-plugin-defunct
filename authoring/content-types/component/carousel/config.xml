@@ -9,5 +9,5 @@
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
-	<image-thumbnail></image-thumbnail>
+	<image-thumbnail>carousel-plugin.png</image-thumbnail>
 </content-type>

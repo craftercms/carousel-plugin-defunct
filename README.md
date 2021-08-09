@@ -6,11 +6,11 @@ This is a highly configurable carousel plugin based on [Tiny Slider](https://git
 
 The plugin can be installed to your site from the Crafter CMS Marketplace.
 
-#Setup
+# Setup
 
 After the plugin has been installed you can add a carousel to any page or component of your site using the `Carousel` content-type.
 
-#Configuration
+# Configuration
 
 Every carousel can be configured with the following properties:
 

@@ -247,7 +247,7 @@
 						</property>
 						<property>
 							<name>maxlength</name>
-							<value>50</value>
+							<value>300</value>
 							<type>int</type>
 						</property>
 						<property>
@@ -964,7 +964,7 @@
 					<title>Controls Container</title>
 					<description>The container selector around the prev/next buttons. If empty, no value will be set for the property.</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;controlsContainer&lt;/strong&gt;&amp;nbsp;must have at least 2 child elements.</help>
+					<help>&lt;strong&gt;Controls Container&lt;/strong&gt;&amp;nbsp;must have at least 2 child elements.</help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -1164,7 +1164,7 @@
 					<title>Nav Container</title>
 					<description>The container element/selector around the dots. If empty, no value will be set for the property.</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;navContainer&lt;/strong&gt;&amp;nbsp;must have at least same number of children as the slides.</help>
+					<help>&lt;strong&gt;Nav Container&lt;/strong&gt;&amp;nbsp;must have at least same number of children as the slides.</help>
 					<properties>
 						<property>
 							<name>size</name>

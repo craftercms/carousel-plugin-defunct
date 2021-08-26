@@ -14,8 +14,9 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 1
+    patch: 2
   description: "A highly configurable carousel plugin based on Tiny Slider with text overlays. Instructions are at https://github.com/craftercms/carousel-plugin#readme."
+  documentation: "https://raw.githubusercontent.com/craftercms/carousel-plugin/master/README.md"
   website:
     name: Carousel
     url: https://github.com/craftercms/carousel-plugin

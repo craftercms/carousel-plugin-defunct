@@ -263,7 +263,7 @@
 					<type>checkbox</type>
 					<id>newTab_b</id>
 					<iceId></iceId>
-					<title>Open Links in New Tab</title>
+					<title>Open Links In New Tab</title>
 					<description></description>
 					<defaultValue>true</defaultValue>
 					<help></help>
@@ -286,7 +286,7 @@
 					<type>numeric-input</type>
 					<id>items_i</id>
 					<iceId></iceId>
-					<title>Number of Visible Items</title>
+					<title>Number Of Visible Items</title>
 					<description>Number of slides being displayed in the viewport. If slides less or equal than items, the slider
 						won't be initialized.
 					</description>
@@ -774,7 +774,7 @@
 					<type>checkbox</type>
 					<id>slideByPage_b</id>
 					<iceId></iceId>
-					<title>Slide by Page</title>
+					<title>Slide By Page</title>
 					<description>Slide one page on one 'click'. If set to true, 'Slide By' value will be ignored.</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -1133,7 +1133,7 @@
 					<type>checkbox</type>
 					<id>navAsThumbnails_b</id>
 					<iceId></iceId>
-					<title>Nav as Thumbnails</title>
+					<title>Nav As Thumbnails</title>
 					<description>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1
 						slides displayed in the viewport.
 					</description>
@@ -1536,7 +1536,7 @@
 					<type>checkbox</type>
 					<id>autoplayResetOnVisibility_b</id>
 					<iceId></iceId>
-					<title>Autoplay Reset on Visibility</title>
+					<title>Autoplay Reset On Visibility</title>
 					<description>Pauses the sliding when the page is invisible and resumes it when the page become visible
 						again.
 					</description>
@@ -1657,7 +1657,7 @@
 					<type>input</type>
 					<id>animateNormal_s</id>
 					<iceId></iceId>
-					<title>Animate CSS class.</title>
+					<title>Animate CSS class</title>
 					<description>Name of default animation class.</description>
 					<defaultValue>tns-normal</defaultValue>
 					<help></help>
@@ -1918,7 +1918,7 @@
 					<type>dropdown</type>
 					<id>preventScrollOnTouch_s</id>
 					<iceId></iceId>
-					<title>Prevent Scroll on Touch</title>
+					<title>Prevent Scroll On Touch</title>
 					<description>Prevent page from scrolling on touchmove.</description>
 					<defaultValue>false</defaultValue>
 					<help>If set to &quot;auto&quot;, the slider will first check if the touch direction matches the slider axis,

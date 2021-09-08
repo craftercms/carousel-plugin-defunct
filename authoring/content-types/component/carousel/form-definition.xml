@@ -89,34 +89,6 @@
 					</constraints>
 				</field>
 				<field>
-					<type>locale-selector</type>
-					<id>localeCode</id>
-					<iceId></iceId>
-					<title>Locale</title>
-					<description></description>
-					<defaultValue>en</defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>datasource</name>
-							<value></value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
 					<type>repeat</type>
 					<id>items_o</id>
 					<iceId></iceId>
@@ -315,8 +287,8 @@
 					<id>items_i</id>
 					<iceId></iceId>
 					<title>Number of Visible Items</title>
-					<description>Number of slides being displayed in the viewport. If slides less or equal than items,
-						the slider won't be initialized.
+					<description>Number of slides being displayed in the viewport. If slides less or equal than items, the slider
+						won't be initialized.
 					</description>
 					<defaultValue>1</defaultValue>
 					<help></help>
@@ -422,8 +394,8 @@
 					<title>Mode</title>
 					<description>Controls animation behaviour.</description>
 					<defaultValue>carousel</defaultValue>
-					<help>With&amp;nbsp;carousel&amp;nbsp;everything slides to the side, while&amp;nbsp;gallery&amp;nbsp;uses
-						fade animations and changes all slides at once.
+					<help>With&amp;nbsp;carousel&amp;nbsp;everything slides to the side, while&amp;nbsp;gallery&amp;nbsp;uses fade
+						animations and changes all slides at once.
 					</help>
 					<properties>
 						<property>
@@ -584,8 +556,7 @@
 					<id>fixedWidth_i</id>
 					<iceId></iceId>
 					<title>Fixed Width</title>
-					<description>Controls width attribute of the slides. If empty, no value will be set for the
-						property.
+					<description>Controls width attribute of the slides. If empty, no value will be set for the property.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -634,8 +605,7 @@
 					<id>fixedHeight_i</id>
 					<iceId></iceId>
 					<title>Fixed Height</title>
-					<description>Controls height attribute of the slides. If empty, no value will be set for the
-						property.
+					<description>Controls height attribute of the slides. If empty, no value will be set for the property.
 					</description>
 					<defaultValue>300</defaultValue>
 					<help></help>
@@ -684,8 +654,7 @@
 					<id>autoWidth_b</id>
 					<iceId></iceId>
 					<title>Auto Width</title>
-					<description>If true, the width of each slide will be its natural width as a inline-block box.
-					</description>
+					<description>If true, the width of each slide will be its natural width as a inline-block box.</description>
 					<defaultValue>false</defaultValue>
 					<help></help>
 					<properties>
@@ -806,8 +775,7 @@
 					<id>slideByPage_b</id>
 					<iceId></iceId>
 					<title>Slide by Page</title>
-					<description>Slide one page on one 'click'. If set to true, 'Slide By' value will be ignored.
-					</description>
+					<description>Slide one page on one 'click'. If set to true, 'Slide By' value will be ignored.</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -856,8 +824,8 @@
 					<description>Controls the display of controls components (prev/next buttons).</description>
 					<defaultValue>true</defaultValue>
 					<help>If&amp;nbsp;&lt;strong&gt;true&lt;/strong&gt;, display the&amp;nbsp;&lt;strong&gt;controls&lt;/strong&gt;&amp;nbsp;and
-						add all functionalities.&lt;br /&gt;For better accessibility, when a prev/next button is
-						focused, user will be able to control the slider using left/right arrow keys.
+						add all functionalities.&lt;br /&gt;For better accessibility, when a prev/next button is focused, user will
+						be able to control the slider using left/right arrow keys.
 					</help>
 					<properties>
 						<property>
@@ -1007,13 +975,12 @@
 					<type>input</type>
 					<id>controlsContainer_s</id>
 					<iceId></iceId>
-					<title>Controls Container</title>
-					<description>The container selector around the prev/next buttons. If empty, no value will be set for
-						the property.
+					<title>Controls Container Selector</title>
+					<description>The container selector around the prev/next buttons. If empty, no value will be set for the
+						property.
 					</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;Controls Container&lt;/strong&gt;&amp;nbsp;must have at least 2 child
-						elements.
+					<help>&lt;strong&gt;Controls Container&lt;/strong&gt;&amp;nbsp;element must have at least 2 child elements.
 					</help>
 					<properties>
 						<property>
@@ -1039,106 +1006,6 @@
 						<property>
 							<name>escapeContent</name>
 							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[/^\S*$/]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>previousButton_s</id>
-					<iceId></iceId>
-					<title>Previous Button</title>
-					<description>Customized previous button. This option will be ignored if Controls Container is a CSS
-						selector. If left empty, value will be set to false.
-					</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>nextButton_s</id>
-					<iceId></iceId>
-					<title>Next Button</title>
-					<description>Customized next button. This option will be ignored if Controls Container is a CSS
-						selector. If empty, no value will be set for the property.
-					</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -1215,12 +1082,11 @@
 					<type>input</type>
 					<id>navContainer_s</id>
 					<iceId></iceId>
-					<title>Nav Container</title>
-					<description>The container element/selector around the dots. If empty, no value will be set for the
-						property.
+					<title>Nav Container Selector</title>
+					<description>The container selector around the dots. If empty, no value will be set for the property.
 					</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;Nav Container&lt;/strong&gt;&amp;nbsp;must have at least same number of children
+					<help>&lt;strong&gt;Nav Container&lt;/strong&gt;&amp;nbsp;element must have at least same number of children
 						as the slides.
 					</help>
 					<properties>
@@ -1268,8 +1134,8 @@
 					<id>navAsThumbnails_b</id>
 					<iceId></iceId>
 					<title>Nav as Thumbnails</title>
-					<description>Indicate if the dots are thumbnails. If true, they will always be visible even when
-						more than 1 slides displayed in the viewport.
+					<description>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1
+						slides displayed in the viewport.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -1478,7 +1344,7 @@
 					<id>autoplayStartText_s</id>
 					<iceId></iceId>
 					<title>Autoplay 'Start' Text</title>
-					<description>Text or markup in the autoplay start button.</description>
+					<description>Text in the autoplay start button.</description>
 					<defaultValue>start</defaultValue>
 					<help></help>
 					<properties>
@@ -1526,7 +1392,7 @@
 					<id>autoplayStopText_s</id>
 					<iceId></iceId>
 					<title>Autoplay 'Stop' Text</title>
-					<description>Text or markup in the autoplay stop button.</description>
+					<description>Text in the autoplay stop button.</description>
 					<defaultValue>stop</defaultValue>
 					<help></help>
 					<properties>
@@ -1597,8 +1463,7 @@
 					<id>autoplayButton_s</id>
 					<iceId></iceId>
 					<title>Autoplay Button Selector</title>
-					<description>The customized autoplay start/stop selector. If empty, no value will be set for the
-						property.
+					<description>The customized autoplay start/stop selector. If empty, no value will be set for the property.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -1646,11 +1511,11 @@
 					<type>checkbox</type>
 					<id>autoplayButtonOutput_b</id>
 					<iceId></iceId>
-					<title>Autoplay Button Output</title>
-					<description>Output autoplayButton markup when autoplay is true but a customized autoplayButton is
-						not provided.
+					<title>Show Autoplay Button</title>
+					<description>Output autoplay button markup when autoplay is true but a customized autoplay button is not
+						provided.
 					</description>
-					<defaultValue>true</defaultValue>
+					<defaultValue>false</defaultValue>
 					<help></help>
 					<properties>
 						<property>
@@ -1672,8 +1537,8 @@
 					<id>autoplayResetOnVisibility_b</id>
 					<iceId></iceId>
 					<title>Autoplay Reset on Visibility</title>
-					<description>Pauses the sliding when the page is invisible and resumes it when the page become
-						visible again.
+					<description>Pauses the sliding when the page is invisible and resumes it when the page become visible
+						again.
 					</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
@@ -1696,7 +1561,7 @@
 					<type>input</type>
 					<id>animateIn_s</id>
 					<iceId></iceId>
-					<title>Animate In</title>
+					<title>Animate In CSS Class</title>
 					<description>Name of intro animation class.</description>
 					<defaultValue>tns-fadeIn</defaultValue>
 					<help></help>
@@ -1744,7 +1609,7 @@
 					<type>input</type>
 					<id>animateOut_s</id>
 					<iceId></iceId>
-					<title>Animate Out</title>
+					<title>Animate Out CSS Class</title>
 					<description>Name of outro animation class.</description>
 					<defaultValue>tns-fadeOut</defaultValue>
 					<help></help>
@@ -1792,7 +1657,7 @@
 					<type>input</type>
 					<id>animateNormal_s</id>
 					<iceId></iceId>
-					<title>Animate Normal</title>
+					<title>Animate CSS class.</title>
 					<description>Name of default animation class.</description>
 					<defaultValue>tns-normal</defaultValue>
 					<help></help>
@@ -1840,9 +1705,9 @@
 					<type>numeric-input</type>
 					<id>animateDelay_i</id>
 					<iceId></iceId>
-					<title>Animate Delay</title>
-					<description>Time between each gallery animation (in &quot;ms&quot;). If empty, no value will be set
-						for the property.
+					<title>Animate Delay (ms)</title>
+					<description>Time between each gallery animation (in milliseconds). If empty, no value will be set for the
+						property.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -1883,29 +1748,6 @@
 							<name>pattern</name>
 							<value><![CDATA[]]></value>
 							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>checkbox</type>
-					<id>loop_b</id>
-					<iceId></iceId>
-					<title>Loop</title>
-					<description>Moves throughout all the slides seamlessly.</description>
-					<defaultValue>true</defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
@@ -1983,8 +1825,7 @@
 					<id>swipeAngle_i</id>
 					<iceId></iceId>
 					<title>Swipe Angle</title>
-					<description>Swipe or drag will not be triggered if the angle is not inside the range when set.
-					</description>
+					<description>Swipe or drag will not be triggered if the angle is not inside the range when set.</description>
 					<defaultValue>15</defaultValue>
 					<help></help>
 					<properties>
@@ -2080,9 +1921,9 @@
 					<title>Prevent Scroll on Touch</title>
 					<description>Prevent page from scrolling on touchmove.</description>
 					<defaultValue>false</defaultValue>
-					<help>If set to &quot;auto&quot;, the slider will first check if the touch direction matches the
-						slider axis, then decide whether prevent the page scrolling or not. If set to &quot;force&quot;,
-						the slider will always prevent the page scrolling.
+					<help>If set to &quot;auto&quot;, the slider will first check if the touch direction matches the slider axis,
+						then decide whether prevent the page scrolling or not. If set to &quot;force&quot;, the slider will always
+						prevent the page scrolling.
 					</help>
 					<properties>
 						<property>
@@ -2114,8 +1955,8 @@
 					<id>freezable_b</id>
 					<iceId></iceId>
 					<title>Freezable</title>
-					<description>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions
-						will stop work) when all slides can be displayed in one page.
+					<description>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop
+						work) when all slides can be displayed in one page.
 					</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
@@ -2187,8 +2028,8 @@
 					<id>useLocalStorage_b</id>
 					<iceId></iceId>
 					<title>Use Local Storage</title>
-					<description>Save browser capability variables to localStorage and without detecting them everytime
-						the slider runs if set to true.
+					<description>Save browser capability variables to localStorage and without detecting them everytime the slider
+						runs if set to true.
 					</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
@@ -2235,8 +2076,8 @@
 					<id>nonce_s</id>
 					<iceId></iceId>
 					<title>Nonce</title>
-					<description>Optional Nonce attribute for inline style tag to allow slider usage without
-						`unsafe-inline Content Security Policy source. If empty, no value will be set for the property.
+					<description>Optional Nonce attribute for inline style tag to allow slider usage without `unsafe-inline
+						Content Security Policy source. If empty, no value will be set for the property.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -2285,8 +2126,7 @@
 					<id>namespace_s</id>
 					<iceId></iceId>
 					<title>Javascript Namespace</title>
-					<description>Namespace to be used to store the slider object once it's initialized. Defaults to
-						'window'.
+					<description>Namespace to be used to store the slider object once it's initialized. Defaults to 'window'.
 					</description>
 					<defaultValue>window</defaultValue>
 					<help></help>
@@ -2335,8 +2175,7 @@
 					<id>elementId_s</id>
 					<iceId></iceId>
 					<title>Element Id</title>
-					<description>Id to be used as the slider object name. If empty, the objectId will be set a the
-						value.
+					<description>Id to be used as the slider object name. If empty, the element id will be set automatically.
 					</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -2385,7 +2224,7 @@
 					<id>responsive_t</id>
 					<iceId></iceId>
 					<title>Responsive Options JSON</title>
-					<description>Defines options for different viewport widths.</description>
+					<description>JSON markup to define options for different viewport widths.</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>

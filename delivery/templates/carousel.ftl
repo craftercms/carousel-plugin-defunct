@@ -126,15 +126,17 @@
 
     // Slider methods: https://github.com/ganlanyuan/tiny-slider/tree/v2.9.3#methods
 
-    // This is for the slider to stop when edit mode is on, and to play when off.
-    // If autoplay setting is set to false, those actions won't affect (slider won't start auto playing)
-    document.addEventListener('craftercms.editMode', (e) => {
-      const isIceOn = e.detail;
-      if (isIceOn) {
-        ${contentModel.namespace_s}.${id}.pause();
-      } else {
-        ${contentModel.namespace_s}.${id}.play();
-      }
-    });
+    <#if modePreview>
+      // This is for the slider to stop when edit mode is on, and to play when off.
+      // If autoplay setting is set to false, those actions won't affect (slider won't start auto playing)
+      document.addEventListener('craftercms.editMode', (e) => {
+        const isIceOn = e.detail;
+        if (isIceOn) {
+          ${contentModel.namespace_s}.${id}.pause();
+        } else {
+          ${contentModel.namespace_s}.${id}.play();
+        }
+      });
+    </#if>
   </script>
 </#if>

@@ -7,22 +7,23 @@ descriptorVersion: 2
 plugin:
   type: site
   id: org.craftercms.plugin.carousel
-  name: Carousel of Images
+  name: Image Carousel
   tags:
     - carousel
     - images
   version:
     major: 1
     minor: 0
-    patch: 1
-  description: A Carousel of Images with text overlay
+    patch: 2
+  description: A highly configurable carousel plugin based on Tiny Slider with text overlays.
+  documentation: "https://raw.githubusercontent.com/craftercms/carousel-plugin/master/README.md"
   website:
     name: Carousel
-    url: TBD
+    url: https://github.com/craftercms/carousel-plugin
   media:
     screenshots:
       - title: Carousel
-        description: Carousel of Images with text overlay
+        description: Powerful image carousel with text overlay
         url: https://raw.githubusercontent.com/craftercms/carousel-plugin/master/.crafter/cover.png
   developer:
     company:

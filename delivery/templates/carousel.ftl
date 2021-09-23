@@ -126,15 +126,24 @@
 
     // Slider methods: https://github.com/ganlanyuan/tiny-slider/tree/v2.9.3#methods
 
-    <#if modePreview>
-      // This is for the slider to stop when edit mode is on, and to play when off.
-      // If autoplay setting is set to false, those actions won't affect (slider won't start auto playing)
+    <#if modePreview && contentModel.autoplay_b>
+      // This is for the slider to stop when edit mode is on, and to play when off (if autoplay is set to true).
       document.addEventListener('craftercms.editMode', (e) => {
         const isIceOn = e.detail;
         if (isIceOn) {
           ${contentModel.namespace_s}.${id}.pause();
         } else {
           ${contentModel.namespace_s}.${id}.play();
+        }
+      });
+
+      // There's an issue with tiny-slider where if autoplay is on and you manually pause it, then hover in/out the carousel,
+      // the carousel starts auto playing again. Pausing the carousel on mouseout will make the pause state consistent.
+      document.querySelector('#${id}-ow').addEventListener('mouseout', () => {
+        if (Boolean(document.querySelector('.craftercms-ice-on'))) {
+          setTimeout(() => {
+            ${contentModel.namespace_s}.${id}.pause();
+          }, 100);
         }
       });
     </#if>

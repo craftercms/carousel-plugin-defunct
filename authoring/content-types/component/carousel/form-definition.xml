@@ -6,7 +6,8 @@
 	<imageThumbnail>undefined</imageThumbnail>
 	<quickCreate>false</quickCreate>
 	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
+	<properties>
+		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
 			<value>/templates/plugins/org/craftercms/plugin/carousel/carousel.ftl</value>
@@ -25,7 +26,8 @@
 			<type>string</type>
 		</property>
 	</properties>
-	<sections>		<section>
+	<sections>
+		<section>
 			<title>Carousel Properties</title>
 			<description></description>
 			<defaultOpen>true</defaultOpen>
@@ -87,34 +89,6 @@
 					</constraints>
 				</field>
 				<field>
-					<type>locale-selector</type>
-					<id>localeCode</id>
-					<iceId></iceId>
-					<title>Locale</title>
-					<description></description>
-					<defaultValue>en</defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>datasource</name>
-							<value></value>
-							<type>datasource:item</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
 					<type>repeat</type>
 					<id>items_o</id>
 					<iceId></iceId>
@@ -135,157 +109,161 @@
 						</property>
 					</properties>
 					<fields>
-				<field>
-					<type>image-picker</type>
-					<id>image_s</id>
-					<iceId></iceId>
-					<title>Image</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>width</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
-							<type>range</type>
-						</property>
-						<property>
-							<name>height</name>
-							<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value>
-							<type>range</type>
-						</property>
-						<property>
-							<name>thumbnailWidth</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>thumbnailHeight</name>
-							<value></value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>imageManager</name>
-							<value>imageFromDesktop,imageFromRepo</value>
-							<type>datasource:image</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>text_s</id>
-					<iceId></iceId>
-					<title>Text</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>link_s</id>
-					<iceId></iceId>
-					<title>Link</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>300</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
+						<field>
+							<type>image-picker</type>
+							<id>image_s</id>
+							<iceId></iceId>
+							<title>Image</title>
+							<description></description>
+							<defaultValue></defaultValue>
+							<help></help>
+							<properties>
+								<property>
+									<name>width</name>
+									<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot;
+										}
+									</value>
+									<type>range</type>
+								</property>
+								<property>
+									<name>height</name>
+									<value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot;
+										}
+									</value>
+									<type>range</type>
+								</property>
+								<property>
+									<name>thumbnailWidth</name>
+									<value></value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>thumbnailHeight</name>
+									<value></value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>imageManager</name>
+									<value>imageFromDesktop,imageFromRepo</value>
+									<type>datasource:image</type>
+								</property>
+								<property>
+									<name>readonly</name>
+									<value></value>
+									<type>boolean</type>
+								</property>
+							</properties>
+							<constraints>
+								<constraint>
+									<name>required</name>
+									<value><![CDATA[]]></value>
+									<type>boolean</type>
+								</constraint>
+							</constraints>
+						</field>
+						<field>
+							<type>input</type>
+							<id>text_s</id>
+							<iceId></iceId>
+							<title>Text</title>
+							<description></description>
+							<defaultValue></defaultValue>
+							<help></help>
+							<properties>
+								<property>
+									<name>size</name>
+									<value>50</value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>maxlength</name>
+									<value>50</value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>readonly</name>
+									<value></value>
+									<type>boolean</type>
+								</property>
+								<property>
+									<name>tokenize</name>
+									<value>false</value>
+									<type>boolean</type>
+								</property>
+								<property>
+									<name>escapeContent</name>
+									<value>true</value>
+									<type>boolean</type>
+								</property>
+							</properties>
+							<constraints>
+								<constraint>
+									<name>required</name>
+									<value><![CDATA[]]></value>
+									<type>boolean</type>
+								</constraint>
+								<constraint>
+									<name>pattern</name>
+									<value><![CDATA[]]></value>
+									<type>string</type>
+								</constraint>
+							</constraints>
+						</field>
+						<field>
+							<type>input</type>
+							<id>link_s</id>
+							<iceId></iceId>
+							<title>Link</title>
+							<description></description>
+							<defaultValue></defaultValue>
+							<help></help>
+							<properties>
+								<property>
+									<name>size</name>
+									<value>50</value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>maxlength</name>
+									<value>300</value>
+									<type>int</type>
+								</property>
+								<property>
+									<name>readonly</name>
+									<value></value>
+									<type>boolean</type>
+								</property>
+								<property>
+									<name>tokenize</name>
+									<value>false</value>
+									<type>boolean</type>
+								</property>
+								<property>
+									<name>escapeContent</name>
+									<value>false</value>
+									<type>boolean</type>
+								</property>
+							</properties>
+							<constraints>
+								<constraint>
+									<name>required</name>
+									<value><![CDATA[]]></value>
+									<type>boolean</type>
+								</constraint>
+								<constraint>
+									<name>pattern</name>
+									<value><![CDATA[]]></value>
+									<type>string</type>
+								</constraint>
+							</constraints>
+						</field>
 					</fields>
 				</field>
 				<field>
 					<type>checkbox</type>
 					<id>newTab_b</id>
 					<iceId></iceId>
-					<title>Open Links in New Tab</title>
+					<title>Open Links In New Tab</title>
 					<description></description>
 					<defaultValue>true</defaultValue>
 					<help></help>
@@ -305,11 +283,61 @@
 					</constraints>
 				</field>
 				<field>
-					<type>checkbox</type>
-					<id>includeStyles_b</id>
+					<type>numeric-input</type>
+					<id>items_i</id>
 					<iceId></iceId>
-					<title>Include Styles</title>
-					<description>Include/exclude styles bundled with the plugin.</description>
+					<title>Number Of Visible Items</title>
+					<description>Number of slides being displayed in the viewport. If slides less or equal than items, the slider
+						won't be initialized.
+					</description>
+					<defaultValue>1</defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>size</name>
+							<value>50</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxValue</name>
+							<value></value>
+							<type>float</type>
+						</property>
+						<property>
+							<name>minValue</name>
+							<value>0</value>
+							<type>float</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>tokenize</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+						<constraint>
+							<name>pattern</name>
+							<value><![CDATA[]]></value>
+							<type>string</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>checkbox</type>
+					<id>autoplay_b</id>
+					<iceId></iceId>
+					<title>Autoplay</title>
+					<description>Toggles the automatic change of slides.</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
 					<properties>
@@ -330,10 +358,35 @@
 			</fields>
 		</section>
 		<section>
-			<title>Options</title>
+			<title>Advanced</title>
 			<description></description>
-			<defaultOpen>true</defaultOpen>
+			<defaultOpen>false</defaultOpen>
 			<fields>
+				<field>
+					<type>label</type>
+					<id>documentation_s</id>
+					<iceId></iceId>
+					<title>Documentation</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>text</name>
+							<value>For more information about the carousel options visit &amp;nbsp;&lt;a href=&quot;https://github.com/ganlanyuan/tiny-slider#options&quot;
+								target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+							</value>
+							<type>string</type>
+						</property>
+						<property>
+							<name>renderAsHTML</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+					</constraints>
+				</field>
 				<field>
 					<type>dropdown</type>
 					<id>mode_s</id>
@@ -341,7 +394,9 @@
 					<title>Mode</title>
 					<description>Controls animation behaviour.</description>
 					<defaultValue>carousel</defaultValue>
-					<help>With&amp;nbsp;carousel&amp;nbsp;everything slides to the side, while&amp;nbsp;gallery&amp;nbsp;uses fade animations and changes all slides at once.</help>
+					<help>With&amp;nbsp;carousel&amp;nbsp;everything slides to the side, while&amp;nbsp;gallery&amp;nbsp;uses fade
+						animations and changes all slides at once.
+					</help>
 					<properties>
 						<property>
 							<name>datasource</name>
@@ -402,57 +457,9 @@
 				</field>
 				<field>
 					<type>numeric-input</type>
-					<id>items_i</id>
-					<iceId></iceId>
-					<title>Items</title>
-					<description>Number of slides being displayed in the viewport. If slides less or equal than items, the slider won't be initialized.</description>
-					<defaultValue>1</defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxValue</name>
-							<value></value>
-							<type>float</type>
-						</property>
-						<property>
-							<name>minValue</name>
-							<value>0</value>
-							<type>float</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[true]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>numeric-input</type>
 					<id>gutter_i</id>
 					<iceId></iceId>
-					<title>Gutter</title>
+					<title>Slide Gutter</title>
 					<description>Space between slides (in &quot;px&quot;).</description>
 					<defaultValue>0</defaultValue>
 					<help></help>
@@ -549,7 +556,8 @@
 					<id>fixedWidth_i</id>
 					<iceId></iceId>
 					<title>Fixed Width</title>
-					<description>Controls width attribute of the slides. If empty, no value will be set for the property.</description>
+					<description>Controls width attribute of the slides. If empty, no value will be set for the property.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -597,7 +605,8 @@
 					<id>fixedHeight_i</id>
 					<iceId></iceId>
 					<title>Fixed Height</title>
-					<description>Controls height  attribute of the slides. If empty, no value will be set for the property.</description>
+					<description>Controls height attribute of the slides. If empty, no value will be set for the property.
+					</description>
 					<defaultValue>300</defaultValue>
 					<help></help>
 					<properties>
@@ -668,7 +677,9 @@
 					<id>viewportMax_i</id>
 					<iceId></iceId>
 					<title>Viewport Max</title>
-					<description>Maximum viewport width for fixedWidth/autoWidth. If empty, no value will be set for the property.</description>
+					<description>Maximum viewport width for fixedWidth/autoWidth. If empty, no value will be set for the
+						property.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -763,7 +774,7 @@
 					<type>checkbox</type>
 					<id>slideByPage_b</id>
 					<iceId></iceId>
-					<title>Slide by Page</title>
+					<title>Slide By Page</title>
 					<description>Slide one page on one 'click'. If set to true, 'Slide By' value will be ignored.</description>
 					<defaultValue></defaultValue>
 					<help></help>
@@ -809,10 +820,13 @@
 					<type>checkbox</type>
 					<id>controls_b</id>
 					<iceId></iceId>
-					<title>Controls</title>
-					<description>Controls the display and functionalities of controls components (prev/next buttons).</description>
+					<title>Show Controls</title>
+					<description>Controls the display of controls components (prev/next buttons).</description>
 					<defaultValue>true</defaultValue>
-					<help>If&amp;nbsp;&lt;strong&gt;true&lt;/strong&gt;, display the&amp;nbsp;&lt;strong&gt;controls&lt;/strong&gt;&amp;nbsp;and add all functionalities.&lt;br /&gt;For better accessibility, when a prev/next button is focused, user will be able to control the slider using left/right arrow keys.</help>
+					<help>If&amp;nbsp;&lt;strong&gt;true&lt;/strong&gt;, display the&amp;nbsp;&lt;strong&gt;controls&lt;/strong&gt;&amp;nbsp;and
+						add all functionalities.&lt;br /&gt;For better accessibility, when a prev/next button is focused, user will
+						be able to control the slider using left/right arrow keys.
+					</help>
 					<properties>
 						<property>
 							<name>readonly</name>
@@ -833,7 +847,7 @@
 					<id>controlsPosition_s</id>
 					<iceId></iceId>
 					<title>Controls Position</title>
-					<description>Controls 'controls' position.</description>
+					<description>Specifies placement of controls relative to the carousel.</description>
 					<defaultValue>top</defaultValue>
 					<help></help>
 					<properties>
@@ -865,7 +879,7 @@
 					<type>input</type>
 					<id>previousControlText_s</id>
 					<iceId></iceId>
-					<title>Previous Control Text</title>
+					<title>Previous Button Text</title>
 					<description>Text in the previous button.</description>
 					<defaultValue>prev</defaultValue>
 					<help></help>
@@ -913,7 +927,7 @@
 					<type>input</type>
 					<id>nextControlText_s</id>
 					<iceId></iceId>
-					<title>Next Control Text</title>
+					<title>Next Button Text</title>
 					<description>Text in the previous button.</description>
 					<defaultValue>next</defaultValue>
 					<help></help>
@@ -961,10 +975,13 @@
 					<type>input</type>
 					<id>controlsContainer_s</id>
 					<iceId></iceId>
-					<title>Controls Container</title>
-					<description>The container selector around the prev/next buttons. If empty, no value will be set for the property.</description>
+					<title>Controls Container Selector</title>
+					<description>The container selector around the prev/next buttons. If empty, no value will be set for the
+						property.
+					</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;Controls Container&lt;/strong&gt;&amp;nbsp;must have at least 2 child elements.</help>
+					<help>&lt;strong&gt;Controls Container&lt;/strong&gt;&amp;nbsp;element must have at least 2 child elements.
+					</help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -989,102 +1006,6 @@
 						<property>
 							<name>escapeContent</name>
 							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[/^\S*$/]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>previousButton_s</id>
-					<iceId></iceId>
-					<title>Previous Button</title>
-					<description>Customized previous button. This option will be ignored if Controls Container is a CSS selector. If left empty, value will be set to false.</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-						<constraint>
-							<name>pattern</name>
-							<value><![CDATA[]]></value>
-							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>input</type>
-					<id>nextButton_s</id>
-					<iceId></iceId>
-					<title>Next Button</title>
-					<description>Customized next button. This option will be ignored if Controls Container is a CSS selector. If empty, no value will be set for the property.</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>size</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>maxlength</name>
-							<value>50</value>
-							<type>int</type>
-						</property>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>tokenize</name>
-							<value>false</value>
-							<type>boolean</type>
-						</property>
-						<property>
-							<name>escapeContent</name>
-							<value>false</value>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -1106,7 +1027,7 @@
 					<id>navComponents_b</id>
 					<iceId></iceId>
 					<title>Nav Components</title>
-					<description>Controls the display and funcionalities of nav components (dots).</description>
+					<description>Controls the display of nav components (dots).</description>
 					<defaultValue>true</defaultValue>
 					<help>If&amp;nbsp;true, display the&amp;nbsp;nav&amp;nbsp;and add all functionalities.</help>
 					<properties>
@@ -1129,7 +1050,7 @@
 					<id>navPosition_s</id>
 					<iceId></iceId>
 					<title>Nav Position</title>
-					<description>Controls nav position.</description>
+					<description>Specifies nav placement.</description>
 					<defaultValue>top</defaultValue>
 					<help></help>
 					<properties>
@@ -1161,10 +1082,13 @@
 					<type>input</type>
 					<id>navContainer_s</id>
 					<iceId></iceId>
-					<title>Nav Container</title>
-					<description>The container element/selector around the dots. If empty, no value will be set for the property.</description>
+					<title>Nav Container Selector</title>
+					<description>The container selector around the dots. If empty, no value will be set for the property.
+					</description>
 					<defaultValue></defaultValue>
-					<help>&lt;strong&gt;Nav Container&lt;/strong&gt;&amp;nbsp;must have at least same number of children as the slides.</help>
+					<help>&lt;strong&gt;Nav Container&lt;/strong&gt;&amp;nbsp;element must have at least same number of children
+						as the slides.
+					</help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -1209,8 +1133,10 @@
 					<type>checkbox</type>
 					<id>navAsThumbnails_b</id>
 					<iceId></iceId>
-					<title>Nav as Thumbnails</title>
-					<description>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1 slides displayed in the viewport.</description>
+					<title>Nav As Thumbnails</title>
+					<description>Indicate if the dots are thumbnails. If true, they will always be visible even when more than 1
+						slides displayed in the viewport.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -1300,29 +1226,6 @@
 					</constraints>
 				</field>
 				<field>
-					<type>checkbox</type>
-					<id>autoplay_b</id>
-					<iceId></iceId>
-					<title>Autoplay</title>
-					<description>Toggles the automatic change of slides.</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
 					<type>dropdown</type>
 					<id>autoplayPosition_s</id>
 					<iceId></iceId>
@@ -1359,9 +1262,9 @@
 					<type>numeric-input</type>
 					<id>autoplayTimeout_i</id>
 					<iceId></iceId>
-					<title>Autoplay Timeout</title>
-					<description>Time between 2 autoplay slides change (in &quot;ms&quot;).</description>
-					<defaultValue>5000</defaultValue>
+					<title>Autoplay Timeout (ms)</title>
+					<description>Time between 2 autoplay slides change (in milliseconds).</description>
+					<defaultValue>8000</defaultValue>
 					<help></help>
 					<properties>
 						<property>
@@ -1441,7 +1344,7 @@
 					<id>autoplayStartText_s</id>
 					<iceId></iceId>
 					<title>Autoplay 'Start' Text</title>
-					<description>Text or markup in the autoplay start button.</description>
+					<description>Text in the autoplay start button.</description>
 					<defaultValue>start</defaultValue>
 					<help></help>
 					<properties>
@@ -1489,7 +1392,7 @@
 					<id>autoplayStopText_s</id>
 					<iceId></iceId>
 					<title>Autoplay 'Stop' Text</title>
-					<description>Text or markup in the autoplay stop button.</description>
+					<description>Text in the autoplay stop button.</description>
 					<defaultValue>stop</defaultValue>
 					<help></help>
 					<properties>
@@ -1538,7 +1441,7 @@
 					<iceId></iceId>
 					<title>Autoplay Hover Pause</title>
 					<description>Stops sliding on mouseover.</description>
-					<defaultValue></defaultValue>
+					<defaultValue>true</defaultValue>
 					<help></help>
 					<properties>
 						<property>
@@ -1559,8 +1462,9 @@
 					<type>input</type>
 					<id>autoplayButton_s</id>
 					<iceId></iceId>
-					<title>Autoplay Button</title>
-					<description>The customized autoplay start/stop selector. If empty, no value will be set for the property.</description>
+					<title>Autoplay Button Selector</title>
+					<description>The customized autoplay start/stop selector. If empty, no value will be set for the property.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -1607,9 +1511,11 @@
 					<type>checkbox</type>
 					<id>autoplayButtonOutput_b</id>
 					<iceId></iceId>
-					<title>Autoplay Button Output</title>
-					<description>Output autoplayButton markup when autoplay is true but a customized autoplayButton is not provided.</description>
-					<defaultValue>true</defaultValue>
+					<title>Show Autoplay Button</title>
+					<description>Output autoplay button markup when autoplay is true but a customized autoplay button is not
+						provided.
+					</description>
+					<defaultValue>false</defaultValue>
 					<help></help>
 					<properties>
 						<property>
@@ -1630,8 +1536,10 @@
 					<type>checkbox</type>
 					<id>autoplayResetOnVisibility_b</id>
 					<iceId></iceId>
-					<title>Autoplay Reset on Visibility</title>
-					<description>Pauses the sliding when the page is invisible and resumes it when the page become visible again.</description>
+					<title>Autoplay Reset On Visibility</title>
+					<description>Pauses the sliding when the page is invisible and resumes it when the page become visible
+						again.
+					</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
 					<properties>
@@ -1653,7 +1561,7 @@
 					<type>input</type>
 					<id>animateIn_s</id>
 					<iceId></iceId>
-					<title>Animate In</title>
+					<title>Animate In CSS Class</title>
 					<description>Name of intro animation class.</description>
 					<defaultValue>tns-fadeIn</defaultValue>
 					<help></help>
@@ -1701,7 +1609,7 @@
 					<type>input</type>
 					<id>animateOut_s</id>
 					<iceId></iceId>
-					<title>Animate Out</title>
+					<title>Animate Out CSS Class</title>
 					<description>Name of outro animation class.</description>
 					<defaultValue>tns-fadeOut</defaultValue>
 					<help></help>
@@ -1749,7 +1657,7 @@
 					<type>input</type>
 					<id>animateNormal_s</id>
 					<iceId></iceId>
-					<title>Animate Normal</title>
+					<title>Animate CSS class</title>
 					<description>Name of default animation class.</description>
 					<defaultValue>tns-normal</defaultValue>
 					<help></help>
@@ -1797,8 +1705,10 @@
 					<type>numeric-input</type>
 					<id>animateDelay_i</id>
 					<iceId></iceId>
-					<title>Animate Delay</title>
-					<description>Time between each gallery animation (in &quot;ms&quot;). If empty, no value will be set for the property.</description>
+					<title>Animate Delay (ms)</title>
+					<description>Time between each gallery animation (in milliseconds). If empty, no value will be set for the
+						property.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -1838,29 +1748,6 @@
 							<name>pattern</name>
 							<value><![CDATA[]]></value>
 							<type>string</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
-					<type>checkbox</type>
-					<id>loop_b</id>
-					<iceId></iceId>
-					<title>Loop</title>
-					<description>Moves throughout all the slides seamlessly.</description>
-					<defaultValue>true</defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
@@ -1934,29 +1821,6 @@
 					</constraints>
 				</field>
 				<field>
-					<type>checkbox</type>
-					<id>mouseDrag_b</id>
-					<iceId></iceId>
-					<title>Mouse Drag</title>
-					<description>Changing slides by dragging them.</description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>readonly</name>
-							<value></value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-						<constraint>
-							<name>required</name>
-							<value><![CDATA[]]></value>
-							<type>boolean</type>
-						</constraint>
-					</constraints>
-				</field>
-				<field>
 					<type>numeric-input</type>
 					<id>swipeAngle_i</id>
 					<iceId></iceId>
@@ -2006,6 +1870,29 @@
 				</field>
 				<field>
 					<type>checkbox</type>
+					<id>mouseDrag_b</id>
+					<iceId></iceId>
+					<title>Mouse Drag</title>
+					<description>Changing slides by dragging them.</description>
+					<defaultValue>true</defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>checkbox</type>
 					<id>preventActionWhenRunning_b</id>
 					<iceId></iceId>
 					<title>Prevent Action When Running</title>
@@ -2031,10 +1918,13 @@
 					<type>dropdown</type>
 					<id>preventScrollOnTouch_s</id>
 					<iceId></iceId>
-					<title>Prevent Scroll on Touch</title>
+					<title>Prevent Scroll On Touch</title>
 					<description>Prevent page from scrolling on touchmove.</description>
 					<defaultValue>false</defaultValue>
-					<help>If set to &quot;auto&quot;, the slider will first check if the touch direction matches the slider axis, then decide whether prevent the page scrolling or not. If set to &quot;force&quot;, the slider will always prevent the page scrolling.</help>
+					<help>If set to &quot;auto&quot;, the slider will first check if the touch direction matches the slider axis,
+						then decide whether prevent the page scrolling or not. If set to &quot;force&quot;, the slider will always
+						prevent the page scrolling.
+					</help>
 					<properties>
 						<property>
 							<name>datasource</name>
@@ -2065,7 +1955,9 @@
 					<id>freezable_b</id>
 					<iceId></iceId>
 					<title>Freezable</title>
-					<description>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop work) when all slides can be displayed in one page.</description>
+					<description>Indicate whether the slider will be frozen (controls, nav, autoplay and other functions will stop
+						work) when all slides can be displayed in one page.
+					</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
 					<properties>
@@ -2136,7 +2028,32 @@
 					<id>useLocalStorage_b</id>
 					<iceId></iceId>
 					<title>Use Local Storage</title>
-					<description>Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.</description>
+					<description>Save browser capability variables to localStorage and without detecting them everytime the slider
+						runs if set to true.
+					</description>
+					<defaultValue>true</defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>readonly</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>checkbox</type>
+					<id>includeStyles_b</id>
+					<iceId></iceId>
+					<title>Include Styles</title>
+					<description>Include/exclude styles bundled with the plugin.</description>
 					<defaultValue>true</defaultValue>
 					<help></help>
 					<properties>
@@ -2159,7 +2076,9 @@
 					<id>nonce_s</id>
 					<iceId></iceId>
 					<title>Nonce</title>
-					<description>Optional Nonce attribute for inline style tag to allow slider usage without `unsafe-inline Content Security Policy source. If empty, no value will be set for the property.</description>
+					<description>Optional Nonce attribute for inline style tag to allow slider usage without `unsafe-inline
+						Content Security Policy source. If empty, no value will be set for the property.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -2203,41 +2122,12 @@
 					</constraints>
 				</field>
 				<field>
-					<type>label</type>
-					<id>documentation_s</id>
-					<iceId></iceId>
-					<title>Documentation</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
-					<properties>
-						<property>
-							<name>text</name>
-							<value>For more information about the carousel options visit &amp;nbsp;&lt;a href=&quot;https://github.com/ganlanyuan/tiny-slider#options&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.</value>
-							<type>string</type>
-						</property>
-						<property>
-							<name>renderAsHTML</name>
-							<value>true</value>
-							<type>boolean</type>
-						</property>
-					</properties>
-					<constraints>
-					</constraints>
-				</field>
-			</fields>
-		</section>
-		<section>
-			<title>Advanced</title>
-			<description></description>
-			<defaultOpen>false</defaultOpen>
-			<fields>
-				<field>
 					<type>input</type>
 					<id>namespace_s</id>
 					<iceId></iceId>
-					<title>Namespace</title>
-					<description>Namespace to be used to store the slider object once it's initialized. Default to 'window'.</description>
+					<title>Javascript Namespace</title>
+					<description>Namespace to be used to store the slider object once it's initialized. Defaults to 'window'.
+					</description>
 					<defaultValue>window</defaultValue>
 					<help></help>
 					<properties>
@@ -2285,7 +2175,8 @@
 					<id>elementId_s</id>
 					<iceId></iceId>
 					<title>Element Id</title>
-					<description>Id to be used as the slider object name. If empty, the objectId will be set a the value.</description>
+					<description>Id to be used as the slider object name. If empty, the element id will be set automatically.
+					</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -2332,8 +2223,8 @@
 					<type>textarea</type>
 					<id>responsive_t</id>
 					<iceId></iceId>
-					<title>Responsive</title>
-					<description>Defines options for different viewport widths.</description>
+					<title>Responsive Options JSON</title>
+					<description>JSON markup to define options for different viewport widths.</description>
 					<defaultValue></defaultValue>
 					<help></help>
 					<properties>
@@ -2387,7 +2278,9 @@
 					<properties>
 						<property>
 							<name>text</name>
-							<value>For more information about responsive options and methods visit&amp;nbsp;&lt;a href=&quot;https://github.com/ganlanyuan/tiny-slider#responsive-options&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.</value>
+							<value>For more information about responsive options and methods visit&amp;nbsp;&lt;a href=&quot;https://github.com/ganlanyuan/tiny-slider#responsive-options&quot;
+								target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+							</value>
 							<type>string</type>
 						</property>
 						<property>
@@ -2402,197 +2295,198 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>				<datasource>
-					<type>key-value-list</type>
-					<id>modeOptions</id>
-					<title>Mode Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;carousel&quot;,&quot;value&quot;:&quot;Carousel&quot;},{&quot;key&quot;:&quot;gallery&quot;,&quot;value&quot;:&quot;Gallery&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>axisOptions</id>
-					<title>Axis Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;horizontal&quot;,&quot;value&quot;:&quot;Horizontal&quot;},{&quot;key&quot;:&quot;vertical&quot;,&quot;value&quot;:&quot;Vertical&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>controlsPositionOptions</id>
-					<title>Controls Position Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>navPositionOptions</id>
-					<title>Nav Position Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>autoplayPositionOptions</id>
-					<title>Autoplay Position Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>autoplayDirectionOptions</id>
-					<title>Autoplay Direction Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;forward&quot;,&quot;value&quot;:&quot;Forward&quot;},{&quot;key&quot;:&quot;backward&quot;,&quot;value&quot;:&quot;Backward&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>key-value-list</type>
-					<id>preventScrollonTouchOptions</id>
-					<title>Prevent Scroll on Touch Options</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>dataType</name>
-							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
-								<type>dropdown</type>
-						</property>
-						<property>
-							<name>options</name>
-							<value>[{&quot;key&quot;:&quot;auto&quot;,&quot;value&quot;:&quot;Auto&quot;},{&quot;key&quot;:&quot;force&quot;,&quot;value&quot;:&quot;Force&quot;},{&quot;key&quot;:&quot;false&quot;,&quot;value&quot;:&quot;False&quot;}]</value>
-								<type>keyValueMap</type>
-						</property>
-						<property>
-							<name>showkeys</name>
-							<value></value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>img-desktop-upload</type>
-					<id>imageFromDesktop</id>
-					<title>Image From Desktop</title>
-					<interface>image</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/static-assets/images</value>
-								<type>content-path-input</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>img-repository-upload</type>
-					<id>imageFromRepo</id>
-					<title>Image From Repo</title>
-					<interface>image</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/static-assets/images</value>
-								<type>content-path-input</type>
-						</property>
-						<property>
-							<name>useSearch</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
+	<datasources>
+		<datasource>
+			<type>key-value-list</type>
+			<id>modeOptions</id>
+			<title>Mode Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;carousel&quot;,&quot;value&quot;:&quot;Carousel&quot;},{&quot;key&quot;:&quot;gallery&quot;,&quot;value&quot;:&quot;Gallery&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>axisOptions</id>
+			<title>Axis Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;horizontal&quot;,&quot;value&quot;:&quot;Horizontal&quot;},{&quot;key&quot;:&quot;vertical&quot;,&quot;value&quot;:&quot;Vertical&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>controlsPositionOptions</id>
+			<title>Controls Position Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>navPositionOptions</id>
+			<title>Nav Position Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>autoplayPositionOptions</id>
+			<title>Autoplay Position Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;top&quot;,&quot;value&quot;:&quot;Top&quot;},{&quot;key&quot;:&quot;bottom&quot;,&quot;value&quot;:&quot;Bottom&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>autoplayDirectionOptions</id>
+			<title>Autoplay Direction Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;forward&quot;,&quot;value&quot;:&quot;Forward&quot;},{&quot;key&quot;:&quot;backward&quot;,&quot;value&quot;:&quot;Backward&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>key-value-list</type>
+			<id>preventScrollonTouchOptions</id>
+			<title>Prevent Scroll on Touch Options</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>dataType</name>
+					<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+					<type>dropdown</type>
+				</property>
+				<property>
+					<name>options</name>
+					<value>[{&quot;key&quot;:&quot;auto&quot;,&quot;value&quot;:&quot;Auto&quot;},{&quot;key&quot;:&quot;force&quot;,&quot;value&quot;:&quot;Force&quot;},{&quot;key&quot;:&quot;false&quot;,&quot;value&quot;:&quot;False&quot;}]</value>
+					<type>keyValueMap</type>
+				</property>
+				<property>
+					<name>showkeys</name>
+					<value></value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>img-desktop-upload</type>
+			<id>imageFromDesktop</id>
+			<title>Image From Desktop</title>
+			<interface>image</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/static-assets/images</value>
+					<type>content-path-input</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>img-repository-upload</type>
+			<id>imageFromRepo</id>
+			<title>Image From Repo</title>
+			<interface>image</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/static-assets/images</value>
+					<type>content-path-input</type>
+				</property>
+				<property>
+					<name>useSearch</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
 	</datasources>
 </form>

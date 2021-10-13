@@ -1,3 +1,7 @@
+.crafter-carousel .carousel-container { /* controls positioning */
+  position: relative;
+}
+
 .crafter-carousel .tns-controls {
   text-align: center;
   margin-bottom: 10px;
@@ -22,6 +26,7 @@
 .crafter-carousel .tns-nav {
   text-align: center;
   margin: 10px 0;
+  z-index: 1;
 }
 
 .crafter-carousel .tns-nav > [aria-controls] {
@@ -40,4 +45,77 @@
 
 .crafter-carousel .tns-nav > .tns-nav-active {
   background: #999;
+}
+
+.crafter-carousel .crafter-carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  height: 100%;
+  box-shadow: none;
+  padding: 20px;
+  cursor: pointer;
+  background: none;
+}
+
+.crafter-carousel .crafter-carousel-control:hover {
+  background: #00000014;
+}
+
+.crafter-carousel .crafter-carousel-control:disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.crafter-carousel .crafter-carousel-control.crafter-back-button {
+  left: 0;
+}
+
+.crafter-carousel .crafter-carousel-control.crafter-next-button {
+  right: 0;
+}
+
+.crafter-carousel .crafter-carousel-control .back-button-icon,
+.crafter-carousel .crafter-carousel-control .next-button-icon{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.crafter-carousel .crafter-carousel-control .back-button-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.crafter-carousel .crafter-carousel-control .next-button-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.crafter-carousel .tns-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.crafter-carousel .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 6px;
+  border-radius: 2px;
 }

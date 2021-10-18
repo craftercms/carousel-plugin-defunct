@@ -27,46 +27,46 @@
 <#assign carouselHasItems = contentModel.items_o.item?has_content />
 
 <#if carouselHasItems>
-    <#if contentModel.fixedHeight_i??>
-        <#assign carouselHeight = contentModel.fixedHeight_i/>
-    <#else>
-        <#assign carouselHeight = 300/>
-    </#if>
+  <#if contentModel.fixedHeight_i??>
+    <#assign carouselHeight = contentModel.fixedHeight_i/>
+  <#else>
+    <#assign carouselHeight = 300/>
+  </#if>
 
   <div class="crafter-carousel <#if contentModel.useOverlayControls_b>overlay-controls</#if>">
     <div class="carousel-container" <#if contentModel.useOverlayControls_b>style="height: ${carouselHeight}px"</#if>>
-        <@crafter.renderRepeatCollection
+      <@crafter.renderRepeatCollection
         $field="items_o"
         $containerTag="div"
         $containerAttributes={'id': id, 'class':'crafter-carousel'}
         $itemTag="div";
         item, index
-        >
-          <div style="position: relative;">
-              <#if item.link_s?has_content>
+      >
+        <div style="position: relative;">
+          <#if item.link_s?has_content>
             <a href="${item.link_s}" <#if contentModel.newTab_b>target="_blank"</#if>>
-                </#if>
-                <@crafter.img
-                $field="items_o.image_s"
-                $index=index
-                src="${item.image_s}"
-                style="height: ${carouselHeight}px; object-fit: cover; width: 100%"
-                />
-                <@crafter.p class="slide-text" $field="items_o.text_s" $index=index>${item.text_s}</@crafter.p>
-                <#if item.link_s?has_content>
+          </#if>
+          <@crafter.img
+            $field="items_o.image_s"
+            $index=index
+            src="${item.image_s}"
+            style="height: ${carouselHeight}px; object-fit: cover; width: 100%"
+          />
+          <@crafter.p class="slide-text" $field="items_o.text_s" $index=index>${item.text_s}</@crafter.p>
+          <#if item.link_s?has_content>
             </a>
-              </#if>
-          </div>
-        </@crafter.renderRepeatCollection>
+          </#if>
+        </div>
+      </@crafter.renderRepeatCollection>
 
-        <#if contentModel.useOverlayControls_b>
-          <button class="crafter-back-button crafter-carousel-control" id="${id}-back">
-            <span class="back-button-icon"></span>
-          </button>
-          <button class="crafter-next-button crafter-carousel-control" id="${id}-next">
-            <span class="next-button-icon"></span>
-          </button>
-        </#if>
+      <#if contentModel.useOverlayControls_b>
+        <button class="crafter-back-button crafter-carousel-control" id="${id}-back">
+          <span class="back-button-icon"></span>
+        </button>
+        <button class="crafter-next-button crafter-carousel-control" id="${id}-next">
+          <span class="next-button-icon"></span>
+        </button>
+      </#if>
     </div>
   </div>
 <#elseif modePreview>
@@ -86,10 +86,10 @@
 
     <#assign noItemsCarouselWidth = contentModel.fixedWidth_i?has_content?then(contentModel.fixedWidth_i + 'px', 'auto') />
     <@crafter.div $field=contentModel.items_o
-    class="crafter-carousel-no-items"
-    $attrs={
-    'style': 'width: ${noItemsCarouselWidth}; height: ${contentModel.fixedHeight_i!300}px;'
-    }
+      class="crafter-carousel-no-items"
+      $attrs={
+      'style': 'width: ${noItemsCarouselWidth}; height: ${contentModel.fixedHeight_i!300}px;'
+      }
     >
       No items have been added to the carousel.
     </@crafter.div>

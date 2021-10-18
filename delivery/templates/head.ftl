@@ -22,9 +22,5 @@
   ~ SOFTWARE.
   -->
 
-<script>
-  if (!window.tns) {
-    document.write('<script src="/static-assets/plugins/org/craftercms/plugin/carousel/js/tiny-slider.min.js"><\/script>');
-  }
-</script>
+<script src="/static-assets/plugins/org/craftercms/plugin/carousel/js/tiny-slider.min.js"></script>
 <script src="/static-assets/plugins/org/craftercms/plugin/carousel/js/crafter-carousel.js"></script>
